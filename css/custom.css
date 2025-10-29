@@ -1,0 +1,117 @@
+/*
+ * Archivo: custom.css
+ * Descripción: Estilos personalizados para la Ayudantía Informática,
+ * complementando Bootstrap 5.
+ */
+
+/* ==================================== */
+/* 1. ESTILOS GLOBALES */
+/* ==================================== */
+
+body {
+    /* Fuente de respaldo, usa la fuente por defecto de Bootstrap */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Color de fondo muy claro (gris) */
+}
+
+/* Contenedor principal para añadir un pequeño padding superior */
+.container {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+
+/* ==================================== */
+/* 2. BARRA DE NAVEGACIÓN (NAVBAR) */
+/* ==================================== */
+
+/* Ajuste para el logo/marca en la barra oscura */
+.navbar-brand {
+    font-weight: 700;
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Resaltar el enlace activo */
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid #17a2b8; /* Un color cyan/info de Bootstrap */
+    color: #ffffff !important;
+}
+
+/* Efecto hover en los enlaces del menú */
+.navbar-nav .nav-link:hover {
+    color: #ced4da !important; /* Gris más claro al pasar el mouse */
+}
+
+
+/* ==================================== */
+/* 3. TABLAS Y SECCIONES (ELEMENTOS / PRESTAMOS) */
+/* ==================================== */
+
+/* Estilo para los títulos de las secciones */
+h2 {
+    color: #007bff; /* Azul primario de Bootstrap */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Mejorar el contraste de las cabeceras de tabla */
+.table-dark th {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+/* Estilo de fila al pasar el mouse (mejorado sobre el de Bootstrap) */
+.table-striped tbody tr:hover {
+    background-color: #e9ecef; /* Gris muy claro */
+    cursor: default;
+}
+
+/* Pequeño margen para los botones de acción en las tablas */
+td .btn {
+    margin-right: 5px;
+}
+
+/* ==================================== */
+/* 4. PESTAÑAS (TABS - ELEMENTOS.PHP) */
+/* ==================================== */
+
+/* Color de fondo de las pestañas */
+.nav-tabs .nav-link {
+    color: #495057;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+/* Pestaña activa */
+.nav-tabs .nav-link.active {
+    color: #007bff;
+    background-color: #ffffff;
+    border-color: #dee2e6 #dee2e6 #ffffff;
+    font-weight: bold;
+}
+
+/* Contenido de la pestaña */
+.tab-content {
+    border: 1px solid #dee2e6;
+    border-top: none;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+
+/* ==================================== */
+/* 5. BADGES (ETIQUETAS DE ESTADO) */
+/* ==================================== */
+
+.badge {
+    padding: 0.5em 0.8em;
+    font-size: 85%;
+}
+
+.badge.bg-warning.text-dark {
+    /* Mejorar la visibilidad de PENDIENTE/Activo */
+    background-color: #ffc107 !important;
+}
